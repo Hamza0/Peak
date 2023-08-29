@@ -103,3 +103,14 @@
     margin: 0;
   }
 }
+
+
+
+<script>
+jQuery(document).ready(function($) {
+  $('.overlay2').on('click', function() {
+    $('#blur-image2').css('filter', 'none');
+    $('.overlay2').hide(); // Hide the clicked overlay
+  });
+});
+</script>
