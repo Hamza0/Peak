@@ -1,0 +1,86 @@
+
+
+<a class="bookmarkBtn" href="https://www.peakmedicalgroup.ca/patient-registration-form-vasectomy/" target="_blank" rel="noopener noreferrer">
+  <span class="IconContainer">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+      <g id="SVGRepo_iconCarrier">
+        <path d="M5 5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5Z" fill="#000000"></path>
+        <path d="M3 7C3 5.89543 3.89543 5 5 5H19C20.1046 5 21 5.89543 21 7C21 8.10457 20.1046 9 19 9H5C3.89543 9 3 8.10457 3 7Z" fill="#000000"></path>
+        <path d="M7 7C6.44772 7 6 6.55228 6 6V4C6 3.44772 6.44772 3 7 3C7.55228 3 8 3.44772 8 4V6C8 6.55228 7.55228 7 7 7Z" fill="#000000"></path>
+        <path d="M17 7C16.4477 7 16 6.55228 16 6V4C16 3.44772 16.4477 3 17 3C17.5523 3 18 3.44772 18 4V6C18 6.55228 17.5523 7 17 7Z" fill="#000000"></path>
+        <path d="M14.99 11.29L14.285 10.58L10.99 13.875L9.69999 12.59L8.98999 13.295L10.99 15.29L14.99 11.29Z" fill="white"></path>
+      </g>
+    </svg>
+  </span>
+  <p class="text"><br>REGISTER NOW</p>
+</a>
+
+
+
+
+
+.bookmarkBtn {
+  width: 180px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 59);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255),rgb(172, 70, 255));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .3s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  transition-duration: .3s;
+  font-size: 12.5px;
+font-family: 'Figtree', sans-serif !important;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 170px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: .3s;
+}
