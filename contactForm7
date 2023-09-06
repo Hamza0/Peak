@@ -1,0 +1,268 @@
+<div class="patient-registration-form">
+  <h2>Patient Registration Form For Vasectomy</h2>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="first-name">First Name:</label>
+      [text* first-name]
+    </div>
+    <div class="form-group">
+      <label for="last-name">Last Name:</label>
+      [text* last-name]
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="preferred-name">Preferred Name (how you prefer to be addressed):</label>
+    [text preferred-name]
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="date-of-birth">Date of Birth:</label>
+      [date* date-of-birth]
+    </div>
+    <div class="form-group">
+      <label for="alberta-health-care-number">Alberta Health Care Number:</label>
+      [text alberta-health-care-number]
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="family-physician">Family Physician:</label>
+    [text family-physician]
+  </div>
+
+  <div class="form-group">
+    <label for="mailing-address">Mailing Address:</label>
+    [textarea* mailing-address]
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="phone-number">Phone Number:</label>
+      [tel* phone-number]
+    </div>
+    <div class="form-group">
+      <label for="email-address">Email Address:</label>
+      [email* email-address]
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="occupation">Occupation:</label>
+    [text occupation]
+  </div>
+
+  <div class="form-group">
+    <label for="level-of-exertion">Level of Exertion at Work:</label>
+    [radio level-of-exertion default:1 "Mild" "Moderate" "Heavy"]
+  </div>
+
+  <h3>Medical and Surgical History</h3>
+
+  <div class="form-group">
+    <label for="medication-allergies">Medication Allergies:</label>
+    [textarea medication-allergies]
+  </div>
+
+  <div class="form-group">
+    <label for="prescribed-medication-testosterone">Prescribed Medication or Testosterone:</label>
+    [textarea prescribed-medication-testosterone]
+  </div>
+
+  <div class="form-group">
+    <label>Do you specifically take any blood thinners (including aspirin)?</label>
+    [textarea blood-thinners]
+  </div>
+
+<div class="form-group">
+    <label>Have you had any of the following operations?</label>
+    <ul>
+        <li><label><input type="radio" name="hernia_surgery" value="yes">Yes</label> - Hernia surgery as an infant or child</li>
+        <li><label><input type="radio" name="hernia_surgery" value="no">No</label> - Hernia surgery as an adult</li>
+        <li><label><input type="radio" name="undescended_testes_surgery" value="yes">Yes</label> - Surgery as a child for undescended testes</li>
+        <li><label><input type="radio" name="testicle_torsion_surgery" value="yes">Yes</label> - Surgery for a torsion/twisted testicle</li>
+        <li><label><input type="radio" name="testicle_removal" value="yes">Yes</label> - Removal of a testicle</li>
+        <li><label><input type="radio" name="prior_vasectomy" value="yes">Yes</label> - Prior vasectomy or prior vasectomy and reversal</li>
+        <li><label><input type="radio" name="other_surgery" value="yes">Yes</label> - Any other type of scrotal or testicular surgery</li>
+    </ul>
+</div>
+
+
+  <div class="form-group">
+    <label for="other-operations">Please list any other operations you may have had:</label>
+    [textarea other-operations]
+  </div>
+
+  <div class="form-group">
+    <label>Have you ever had any of the following problems?</label>
+    [checkbox* problems use_label_element "Problems with bleeding or easy bruising" "Difficulty getting or maintaining erections" "Premature ejaculation" "Difficulty reaching climax" "Tendency to get lightheaded or faint when having or witnessing medical procedures or tests" "Herpes" "Genital warts" "HIV" "Epididymitis (infection around the testicle)" "Varicocele (dilated blood vessels in the scrotum)" "Hydrocele (fluid collection in the scrotum)"]
+  </div>
+
+  <h3>Family Information</h3>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="your-age">Your Age:</label>
+      [text your-age]
+    </div>
+    <div class="form-group">
+      <label for="marital-status">Marital Status:</label>
+      [radio marital-status default:1 "Married" "Single" "Separated" "Steady partner" "Casual partner"]
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="partner-name">Partner's Full Name:</label>
+    [text partner-name]
+  </div>
+
+  <div class="form-group">
+    <label>Partner's Awareness (of vasectomy):</label>
+    [radio partner-awareness default:1 "Yes" "No"]
+  </div>
+
+  <div class="form-group">
+    <label>How would you refer to yourself with regards to your partner?</label>
+    [radio partner-reference default:1 "Husband" "Fiance" "Boyfriend" "Partner" "N/A"]
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="partner-age">Partner's Age:</label>
+      [text partner-age]
+    </div>
+    <div class="form-group">
+      <label for="years-with-partner">Number of Years with Present Partner:</label>
+      [text years-with-partner]
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="children-with-partner">Number of Children with Present Partner:</label>
+      [text children-with-partner]
+    </div>
+    <div class="form-group">
+      <label for="total-children">Total Number of Children You Have Had:</label>
+      [text total-children]
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="partner-total-children">Total Number of Children Your Current Partner Has Had:</label>
+      [text partner-total-children]
+    </div>
+    <div class="form-group">
+      <label for="age-of-youngest-child">Age of Your Youngest Child:</label>
+      [text age-of-youngest-child]
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Were Your Children All Planned?</label>
+    [radio children-planned default:1 "Yes" "No" "N/A"]
+  </div>
+
+  <div class="form-group">
+    <label for="partner-pregnancy">Is Your Partner Pregnant Now?</label>
+    [textarea partner-pregnancy]
+  </div>
+
+  <div class="form-group">
+    <label for="partner-tubes-tied">Has Your Partner Had Their Tubes Tied or Undergone Hysterectomy?</label>
+    [textarea partner-tubes-tied]
+  </div>
+
+  <div class="form-group">
+    <label for="primary-birth-control">Primary Method of Birth Control in the Last Few Months:</label>
+    [textarea primary-birth-control]
+  </div>
+
+  
+<h3>Vasectomy Consent and Agreement:</h3><div class="vasectomy-consent" style="font-size: small; font-style: italic; line-height: 1;">
+    <p>
+      Before proceeding with the vasectomy, please review and consent to the following:
+    </p>
+    <ul style="margin-bottom: 8px;">
+      <li>You have read the information provided on our website regarding no-scalpel no-needle vasectomy.</li>
+      <li>If you have a history of fainting, it's advised to bring a driver with you for the procedure.</li>
+      <li>Refrain from alcohol consumption 24 hours before and after the procedure.</li>
+      <li>Avoid taking aspirin, anticoagulants (warfarin), or anti-inflammatories (NSAIDs) such as ibuprofen, Advil, Motrin, Aleve, etc., for 7 days before and after the operation.</li>
+      <li>Have a discussion with your partner about the decision to undergo a vasectomy, and ensure they are supportive of your choice. Feel free to contact our office to discuss further if needed.</li>
+      <li>Be aware that failure to follow pre-procedure instructions or cancellation with short notice may incur a $200 cancellation fee.</li>
+    </ul>
+
+    <div class="form-group">
+      <label for="vasectomy-consent-agreement" style="display: block; font-size: small; font-style: italic;">
+        <input type="checkbox" name="vasectomy-consent-agreement" required>I have read and consent to the Vasectomy Consent and Agreement.
+      </label>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="patient-signature">Patient Signature:</label>
+    [text* patient-signature]
+  </div>
+
+  <div class="form-group">
+    <label for="date">Date:</label>
+    [date* date]
+  </div>
+
+
+  <input type="submit" value="Submit">
+</div>
+
+
+
+
+
+Subject: Patient Registration Form Submission
+
+From: [first-name] [last-name] <[email-address]>
+
+Patient Registration Form Submission:
+
+First Name: [first-name]
+Last Name: [last-name]
+Preferred Name: [preferred-name]
+Date of Birth: [date-of-birth]
+Alberta Health Care Number: [alberta-health-care-number]
+Family Physician: [family-physician]
+Mailing Address: [mailing-address]
+Phone Number: [phone-number]
+Email Address: [email-address]
+Occupation: [occupation]
+Level of Exertion at Work: [level-of-exertion]
+
+Medical and Surgical History:
+Medication Allergies: [medication-allergies]
+Prescribed Medication or Testosterone: [prescribed-medication-testosterone]
+Blood Thinners: [blood-thinners]
+Operations: [hernia-surgery-infant], [hernia-surgery-adult], [surgery-for-undescended-testes], [torsion-surgery], [testicle-removal], [prior-vasectomy], [other-scrotal-surgery]
+Other Operations: [other-operations]
+Problems: [bleeding-bruising-problems], [erection-problems], [premature-ejaculation], [difficulty-reaching-climax], [lightheaded-faint], [herpes], [genital-warts], [hiv], [epididymitis], [varicocele], [hydrocele]
+
+Family Information:
+Your Age: [your-age]
+Marital Status: [marital-status]
+Partner's Full Name: [partner-name]
+Partner's Awareness: [partner-awareness]
+How You Refer to Yourself with Regards to Your Partner: [partner-reference]
+Partner's Age: [partner-age]
+Number of Years with Present Partner: [years-with-partner]
+Number of Children with Present Partner: [children-with-partner]
+Total Number of Children You Have Had: [total-children]
+Total Number of Children Your Current Partner Has Had: [partner-total-children]
+Age of Your Youngest Child: [age-of-youngest-child]
+Were Your Children All Planned? [children-planned]
+Is Your Partner Pregnant Now? [partner-pregnancy]
+Has Your Partner Had Their Tubes Tied or Undergone Hysterectomy? [partner-tubes-tied]
+PRIMARY Method of Birth Control in the Last Few Months: [primary-birth-control]
+
+Patient Signature: [patient-signature]
+Date: [date]
